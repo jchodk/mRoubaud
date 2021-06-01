@@ -53,7 +53,7 @@ void setup() {
     
     bootCount++;
     Sonnet monSonnet;
-    monSonnet = Sonnets[bootCount%46]; // todo:
+    monSonnet = Sonnets[bootCount%nbrSonnets]; // todo:
     display_full_screen_left_aligned_text(monSonnet.texte,monSonnet.auteur,monSonnet.titre);
     delay(1500);
 
