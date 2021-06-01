@@ -7,4 +7,4 @@ Le code source utilise la bibliothèque epdiy (https://github.com/vroland/epdiy)
 
 En fonctionnant sur batterie, avec chargement d'un nouveau poème chaque jour on devrait dispose d'une autonomie d'au moins un an.
 
-La version actuelle ne propose qu'une cinquantaine de poèmes, la version cible en comportera 150 soit un milliRoubaud (unité de mesure adhoc inspirée par le mathématicien, romancier, poète Jacques Roubaud qui en lu 150 000).
+La version actuelle ne propose qu'une cinquantaine de poèmes, la version cible en comportera 150 soit un milliRoubaud (unité de mesure adhoc inspirée par le mathématicien, romancier, poète Jacques Roubaud qui a lu 150 000 sonnets).
