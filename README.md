@@ -5,7 +5,7 @@ Afficheur de sonnets autonome utilisant un [TTGO T5 4.7](https://github.com/Xiny
 
 Le code source utilise la bibliothèque [epdiy](https://github.com/vroland/epdiy) et a été construit à partir de [l'exemple](https://github.com/vroland/epdiy/tree/master/examples/lilygo-t5-47-epd-platformio) fourni pour l'affichage de texte sur l'EDP47.
 
-La durée d'affichage d'un pème est déterminée par 
+La durée d'affichage d'un poème est déterminée par 
 
 `int64_t sleepTime = 60;          // in minutes`
 
