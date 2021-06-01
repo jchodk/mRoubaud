@@ -1,1 +1,3 @@
-Montage en utilisant un cadre photo IKEA Ribba 10x15. Découpe dans du papier 270g d'un passe-partout adapté aux dimension de l'EDP47. Fixation de la carte sur ce passe-partout avec du gaffer et utilisation du passe-partout d'origine au dos pour prendre la carte en sandwich.
+# Fabrication
+Montage en utilisant un cadre photo IKEA Ribba 10x15. Découpe dans du papier 270g d'un passe-partout adapté aux dimensions de l'EDP47. 
+Fixation de la carte sur ce passe-partout avec du gaffer et utilisation du passe-partout d'origine au dos pour prendre la carte en sandwich.
