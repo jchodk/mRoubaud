@@ -3,6 +3,10 @@
 
 Afficheur de sonnets autonome utilisant un [TTGO T5 4.7](https://github.com/Xinyuan-LilyGO/LilyGo-EPD47)
 
+ <img src="Hardware\front.jpg" Height=500 >
+ <img src="Hardware\back.jpg" Height=500 >
+ 
+
 Le code source utilise la bibliothèque [epdiy](https://github.com/vroland/epdiy) et a été construit à partir de [l'exemple](https://github.com/vroland/epdiy/tree/master/examples/lilygo-t5-47-epd-platformio) fourni pour l'affichage de texte sur l'EDP47. Le projet est géré sous PlatformIO mais peut fonctionner avec l'IDE Arduino en suivant les consignes spécifiques d'installations de la bibliothèque edpiy.
 
 La durée d'affichage d'un poème est déterminée par 
