@@ -17,7 +17,7 @@ En fonctionnant avec une batterie 18650, avec chargement d'un nouveau poème cha
 
 La version actuelle ne propose qu'une cinquantaine de poèmes, la version cible en comportera 150 soit un milliRoubaud (unité de mesure adhoc inspirée par le mathématicien, romancier, poète [Jacques Roubaud](https://fr.wikipedia.org/wiki/Jacques_Roubaud) qui dit avoir lu 150 000 sonnets). 
 
-Le texte des sonnets a été récupéré depuis http://michel.balmont.free.fr/pedago/sonnet/anthologie_sonnets.pdf et sera complété ultérieurement sans doute en puisant dans l'anthologie [Quasi-Cristaux](https://blogs.oulipo.net/qc/choix-premiere-partie/2-presentation-generale/) des sonnets depuis 1801 propsée par Roubaud.
+Le texte des sonnets a été récupéré depuis http://michel.balmont.free.fr/pedago/sonnet/anthologie_sonnets.pdf et sera complété ultérieurement sans doute en puisant dans l'anthologie [Quasi-Cristaux](https://blogs.oulipo.net/qc/choix-premiere-partie/2-presentation-generale/) des sonnets depuis 1801 proposée par Roubaud.
 
 La disposition du texte est limitée par les possibilités de la bibliothèque epdiy qui ne gère pas (encore) l'alignement (un paramètre alignement est prévu mais non implémenté) et surtout le passage à la ligne si le texte déborde de la zone d'affichage. De surcroit, un passage à la ligne standard ne conviendrait pas pour de la poésie.
 
