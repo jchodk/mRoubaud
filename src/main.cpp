@@ -6,7 +6,6 @@
 // fonts
 #include "opensans8b.h"
 #include "opensans12b.h"
-#include "Firasans.h"
 #include "sonnets.h"
 
 // battery
@@ -27,7 +26,7 @@ uint8_t *fb;
 enum EpdDrawError err;
 EpdRotation orientation = EPD_ROT_PORTRAIT;
 RTC_DATA_ATTR int bootCount;    // RTC Memory preserved across deepsleeps
-int64_t sleepTime = 60;         // in minutes
+int64_t sleepTime = 1;         // in minutes
 int vref = 1100;                // ? for battery ?
 
 double_t get_battery_percentage()
@@ -62,7 +61,7 @@ void display_full_screen_left_aligned_text(const char* text,const char* auteur,c
     epd_hl_set_all_white(&hl); // first set full screen to white
 
     int cursor_x = 150;
-    int cursor_y = 200;
+    int cursor_y = 150;
     epd_write_string(&OpenSans12B, titre, &cursor_x, &cursor_y, fb, &font_props);
     cursor_x = 35;
     cursor_y = cursor_y + 50;
@@ -70,17 +69,14 @@ void display_full_screen_left_aligned_text(const char* text,const char* auteur,c
     cursor_x = 250;
     cursor_y = cursor_y + 50;
     epd_write_string(&OpenSans8B, auteur, &cursor_x, &cursor_y, fb, &font_props);
-    epd_poweron();
-    err = epd_hl_update_screen(&hl, MODE_GC16, temperature);
 
     /************ Battery percentage display ****************/
-    int battery_cursor_x = EPD_HEIGHT - 10;
-    int battery_cursor_y = EPD_WIDTH - 30;
-    EpdFontProperties battery_font_props = epd_font_properties_default();
-    battery_font_props.flags = EPD_DRAW_ALIGN_RIGHT;
-    String battery_text = String(get_battery_percentage());
-    battery_text.concat("% Battery");
-    epd_write_string(&FiraSans_12, battery_text.c_str(), &battery_cursor_x, &battery_cursor_y, fb, &battery_font_props);
+    cursor_x = 30;
+    cursor_y = cursor_y + 50;
+    String status = "Batterie : " + String(get_battery_percentage()) + " / #Boots :" + String(bootCount);
+    epd_write_string(&OpenSans8B, status.c_str(), &cursor_x, &cursor_y, fb, &font_props);
+    epd_poweron();
+    err = epd_hl_update_screen(&hl, MODE_GC16, temperature);
   
     delay(1500);
     epd_poweroff();
