@@ -13,7 +13,9 @@ La durée d'affichage d'un poème est déterminée par
 
 `int64_t sleepTime = 60;          // in minutes`
 
-En fonctionnant avec une batterie 18650, avec chargement d'un nouveau poème chaque jour on devrait disposer d'une autonomie d'au moins un an (l'ESP32 étant tout le temps en mode *deepsleep* sauf les quelques secondes où il affiche un nouveau poème). On peut forcer le changement de poème en utilisant le premier bouton (celui à côte des connecteurs).
+On peut forcer la sortie du *deepSleep* et donc changement de poème en utilisant le premier bouton (celui à côte des connecteurs).
+
+En fonctionnant avec une batterie 18650, avec chargement d'un nouveau poème chaque jour on devrait disposer d'une autonomie d'au moins un an (l'ESP32 étant tout le temps en mode *deepSleep* sauf les quelques secondes où il affiche un nouveau poème). Il s'avère que la consommation dans ce mode est beaucoup beaucoup plus importante que prévue...à tel point qu'au lieu d'avoir une durée de fonctionnement s'exprimant en heures quand j'attendais des mois!                                      
 
 La version actuelle ne propose qu'une cinquantaine de poèmes, la version cible en comportera 150 soit un milliRoubaud (unité de mesure adhoc inspirée par le mathématicien, romancier, poète [Jacques Roubaud](https://fr.wikipedia.org/wiki/Jacques_Roubaud) qui dit avoir lu 150 000 sonnets). 
 
